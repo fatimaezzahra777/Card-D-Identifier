@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-blue-500 pt-10 pb-0">
+        <button type="submit" class="btn bg-blue-500 text-4xl " id="btn">Ajouter</button>
+    </div>
+    
+    <section class="body bg-blue-500 text-black min-h-screen flex items-center justify-center">
+        
+        <div class="grid grid-cols-3 p-20 bg-green-200 rounded-xl space-between hidden">   
+        </div>
+
+        <div class="infos">
+            </div>
+
+    </section>
+    <section id="sec-form">
+        
+        <form id="form">
+            <h2 class="title">Ajouter une personne</h2>
+            <input type="hidden" id="person-id">
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date de naissance</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" required>
+            </div>
+
+            <div class="form-group">
+                <label for="img">Photo(URL)</label>
+                <input type="url" id="img" placeholder="URL de la photo" class="border p-2 rounded col-span-2">
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn-primary" id="submit-btn">Ajouter</button>
+                <button type="submit" class="btn-primary" id="submit">Enregistrer</button>
+                <button type="button" class="btn-secondary" id="cancel">Annuler</button>
+            </div>
+        </form>
+
+    </section>
+    <section></section>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
